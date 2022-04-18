@@ -17,7 +17,7 @@ You should install these necessary packages:
 Then place your own data files in `data/`. Please change `models/utils.py/get_data` function to get **dicts** for train, val (if optional else **None**) and test. These dicts must be formulated by Pytorch tensors as:
 
 ```python
-"x_time": torch.Size([all_samples, X_time_points, 1])  # Timestamps
+"x_time": torch.Size([all_samples, x_time_points, 1])  # Timestamps
 "x_data": torch.Size([all_samples, x_time_points, x_dims])  # input data
 "x_mask": torch.Size([all_samples, x_time_points, x_dims])  # input mask. Bool tensor.
 "y_time": torch.Size([all_samples, y_time_points, 1])  # Timestamps
